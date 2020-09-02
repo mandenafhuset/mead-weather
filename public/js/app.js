@@ -12,7 +12,8 @@ const getForecast = (address) => {
             return resultsDiv.innerText = data.error;
         }
 
-        resultsDiv.innerText = `The weather in ${data.location} is ${data.forecast}`;
+        resultsDiv.innerText = `The weather in ${data.location} is ${data.forecast} 
+        Also brah the humidity is ${data.humidity}.`;
     })
     .catch((err) => {
         console.log(err);

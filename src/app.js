@@ -69,6 +69,7 @@ app.get('/weather', (req, res) => {
             res.send({
                 forecast: `${current.weather_descriptions} with a temperature of ${current.temperature}C.`,
                 location: `${location.name}, ${location.region}`,
+                humidity: `${current.humidity}`,
                 address: req.query.address
                 
             });
