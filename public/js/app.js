@@ -3,7 +3,7 @@ const resultsDiv = document.querySelector('#results');
 const getForecast = (address) => {
     resultsDiv.innerText = 'Loading...'
 
-    fetch('http://localhost:3000/weather?address=' + address)
+    fetch('/weather?address=' + address)
     .then((res) => {
     return res.json();
     })
